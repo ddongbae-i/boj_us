@@ -24,13 +24,6 @@
 
 @media screen and (max-width:1280px) {
 
-    /*     body.menu-open,
-    html.menu-open {
-        overflow: hidden;
-        height: 100%;
-    } */
-
-
     header.on {
         background: var(--bg_white);
     }
@@ -257,7 +250,7 @@ header.on .gnb>li>a {
     justify-content: space-between;
 }
 
-.gnb>li>a::after {
+header.on .gnb>li>a::after {
     content: '';
     display: block;
     width: 30px;

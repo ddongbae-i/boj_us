@@ -16,11 +16,7 @@ a.btn2 {
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url(../img/arrow_up.svg);
-}
-
-header {
-    z-index: 5;
+    background-image: url(/asset/img/shop/arrow_up.svg);
 }
 
 .puzzle {
@@ -149,12 +145,11 @@ header {
     color: var(--white_ff);
     padding-block: 60px;
     display: flex;
-    padding-right: 0;
 }
 
-.sale_zone .inner .txt_area {
+/* .sale_zone .inner .txt_area {
     width: 100%;
-}
+} */
 
 .sale_zone .txt {
     width: 220px;
@@ -168,16 +163,17 @@ header {
     color: var(--white_ff);
 }
 
-.carousel {
-    position: relative;
-    overflow: hidden;
-    /* 스크롤 숨김 */
+.sale_zone .inner .txt_area{ /* width:100% 제거 */
+  flex: 0 0 420px; /* 또는 width:40% 등 */
 }
+
+.carousel{ min-width:0; }
+
 
 .swiper .product_wrap {
     display: flex;
     gap: 37px;
-    padding-right: none;
+    padding-right: 0;
 }
 
 .pro_card.swiper-slide {
@@ -197,22 +193,6 @@ header {
     background: var(--shop_bg);
 }
 
-
-
-.carousel .swiper-button-prev,
-.carousel .swiper-button-next {
-    width: 40px;
-    height: 40px;
-    border-radius: 999px;
-    background: #1d1d1d;
-    color: #fff;
-}
-
-.carousel .swiper-button-prev::after,
-.carousel .swiper-button-next::after {
-    font-size: 18px;
-}
-
 .pro_card .add_btn {
     width: 100%;
     height: 50px;
@@ -225,8 +205,6 @@ header {
     gap: 8px;
     margin-top: 8px;
 }
-
-
 
 .pro_bottom {
     display: flex;
@@ -317,31 +295,4 @@ header {
 
 .p_right .option ul.active ul {
     display: block;
-}
-
-.nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    border: 0;
-    border-radius: 999px;
-    background: #1d1d1d;
-    color: #fff;
-    opacity: .9;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.nav:hover {
-    opacity: 1;
-}
-
-.nav.prev {
-    left: 8px;
-}
-
-.nav.next {
-    right: 8px;
 }
