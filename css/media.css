@@ -338,7 +338,6 @@ footer .f_tit {
 .f_sns {
     gap: 16px;
 }
-}
 
 @media screen and (max-width:640px) {
     .inner {
