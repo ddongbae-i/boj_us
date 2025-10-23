@@ -19,6 +19,10 @@ a.btn2 {
     background-image: url(/asset/img/shop/arrow_up.svg);
 }
 
+header {
+    z-index: 6;
+}
+
 .puzzle {
     position: relative;
     width: 100%;
@@ -145,11 +149,12 @@ a.btn2 {
     color: var(--white_ff);
     padding-block: 60px;
     display: flex;
+    padding-right: 0;
 }
 
-/* .sale_zone .inner .txt_area {
+.sale_zone .inner .txt_area {
     width: 100%;
-} */
+}
 
 .sale_zone .txt {
     width: 220px;
@@ -163,17 +168,16 @@ a.btn2 {
     color: var(--white_ff);
 }
 
-.sale_zone .inner .txt_area{ /* width:100% 제거 */
-  flex: 0 0 420px; /* 또는 width:40% 등 */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    /* 스크롤 숨김 */
 }
-
-.carousel{ min-width:0; }
-
 
 .swiper .product_wrap {
     display: flex;
     gap: 37px;
-    padding-right: 0;
+    padding-right: none;
 }
 
 .pro_card.swiper-slide {
@@ -193,6 +197,22 @@ a.btn2 {
     background: var(--shop_bg);
 }
 
+
+
+.carousel .swiper-button-prev,
+.carousel .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: #1d1d1d;
+    color: #fff;
+}
+
+.carousel .swiper-button-prev::after,
+.carousel .swiper-button-next::after {
+    font-size: 18px;
+}
+
 .pro_card .add_btn {
     width: 100%;
     height: 50px;
@@ -205,6 +225,8 @@ a.btn2 {
     gap: 8px;
     margin-top: 8px;
 }
+
+
 
 .pro_bottom {
     display: flex;
@@ -286,7 +308,7 @@ a.btn2 {
     padding: 10px;
     color: var(--txt_sub_44);
     font-size: 1rem;
-    z-index: 100;
+    z-index: 5;
 }
 
 .p_right .option ul li:first-child {
