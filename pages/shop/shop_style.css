@@ -16,11 +16,11 @@ a.btn2 {
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url(../img/arrow_up.svg);
+    background-image: url(/asset/img/shop/arrow_up.svg);
 }
 
 header {
-    z-index: 5;
+    z-index: 6;
 }
 
 .puzzle {
@@ -308,7 +308,7 @@ header {
     padding: 10px;
     color: var(--txt_sub_44);
     font-size: 1rem;
-    z-index: 100;
+    z-index: 5;
 }
 
 .p_right .option ul li:first-child {
@@ -317,31 +317,4 @@ header {
 
 .p_right .option ul.active ul {
     display: block;
-}
-
-.nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    border: 0;
-    border-radius: 999px;
-    background: #1d1d1d;
-    color: #fff;
-    opacity: .9;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.nav:hover {
-    opacity: 1;
-}
-
-.nav.prev {
-    left: 8px;
-}
-
-.nav.next {
-    right: 8px;
 }
